@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+	.principal-section {
+		background-attachment: initial;
+	}
+	.servicio-screen {
+		background-attachment: initial;
+	}
+	.datos-article {
+		width: 100%;
+	}
+}

@@ -1,0 +1,30 @@
+@media (max-width: 475px){
+	.presentacion-section{
+		height: auto;
+		padding: 4em 1em;
+	}
+	.presentacion-section__span{
+		width: 100%;
+		font-size: 1.75em;
+	}
+	.presentacion-section__h2{
+		font-size: 3.75em;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+
+	.catalogo-section{
+		padding: 5em 0;
+	}
+	.catalogo-section__apartados--contenedor-titulo{
+		width: 100%;
+		padding: 0 1em;
+	}
+	.apartados__contenedor-productos--card-producto{
+		width: 100%;
+		padding: 0 1.75em;
+	}
+}

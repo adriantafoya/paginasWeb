@@ -1,0 +1,145 @@
+.principal-section {
+	height: calc(100vh - 50px);
+	width: 100%;
+	background: url('../img/background-principal-section.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.contenedor-flex-principal-section {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.principal-section__logo {
+	max-width: 100%;
+	width: 650px;
+	filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+
+.servicio-section {
+	height: auto;
+	width: 100%;
+}
+.servicio-screen {
+	height: auto;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.servicio-screen__filtro {
+	height: auto;
+	width: 100%;
+	padding: 1rem 0 3rem 0;
+	background-color: rgba(0, 0, 0, .09);
+}
+.servicio-screen--intro {
+	background-image: url(../img/background-servicios-section.jpg);
+}
+.servicio-screen--unas {
+	background-image: url(../img/unas-acrilicas.jpg);
+}
+.servicio-screen--pedicure {
+	background-image: url(../img/pedicure.jpg);
+}
+.servicio-screen--tintes {
+	background-image: url(../img/tintes-b.jpg);
+}
+.servicio-screen--maquillaje {
+	background-image: url(../img/maquillaje.jpg);
+}
+.servicio-screen--intro__contenedor-flex {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.servicio-screen__contenedor-flex {
+	min-height: 100vh;
+	height: 100%;
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.servicio-screen--intro___titulo {
+	color: #222;
+	text-align: center;
+	width: 800px;
+}
+.servicio-screen__titulo, .servicio-screen__descripcion {
+	color: #f3f3f3;
+	text-align: center;
+}
+.servicio-screen__titulo--unas, .servicio-screen__descripcion--unas {
+	color: #111;
+	text-align: center;
+}
+.servicio-screen__link {
+	display: inline-block;
+	padding: 6px 20px;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 0 2px 12px -4px rgba(0, 0, 0, .3);
+	text-decoration: none;
+	border: 1px solid #EABE3F;
+	color: #E5A65E;
+	font-size: 20px;
+	font-family: var(--titulos);
+	font-weight: 900;
+	margin-top: 2rem;
+}
+.servicio-screen__link:hover {
+	background-color: #eee;
+	transition: all .2s;
+}
+
+
+.contacto-section {
+	height: auto;
+	width: 100%;
+	padding: 1px 0 2rem 0;
+}
+.contenedor-flex-contacto-section {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.datos-article {
+	height: auto;
+	width: 33.33%;
+	padding: 0 .75rem;
+}
+.datos-article ul {
+	list-style: none;
+	padding: 0;
+}
+.datos-article__contenedor-iconos-rs {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.datos-article__link-rs {
+	display: inline-block;
+	height: auto;
+	width: 30px;
+	margin-right: 10px;
+}
+.datos-article__link-rs:last-child {
+	margin-right: 0;
+}
+.datos-article__link-rs img {
+	height: auto;
+	width: 100%;
+}

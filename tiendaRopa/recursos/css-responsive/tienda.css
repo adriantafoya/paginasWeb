@@ -1,0 +1,6 @@
+@media (max-width: 768px){
+	.contenedor-flex-principal-section p{
+		width: 100%;
+		font-size: 18px;
+	}
+}

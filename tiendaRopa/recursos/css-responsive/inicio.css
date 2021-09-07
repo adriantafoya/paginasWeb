@@ -1,0 +1,29 @@
+@media (max-width: 768px){
+	.contenedor-logo img{
+		width: 45%;
+	}
+	.contenedor-texto{
+		width: 100%;
+	}
+
+
+	.tarjeta-cta{
+		height: 10em;
+		width: 10em;
+	}
+
+
+	.carrusel-productos::-webkit-scrollbar{
+		height: 4px;
+	}
+}
+
+@media (max-width: 480px){
+	.contenedor-logo img{
+		width: 45%;
+	}
+	.tarjeta-cta{
+		height: 7.5em;
+		width: 7.5em;
+	}
+}

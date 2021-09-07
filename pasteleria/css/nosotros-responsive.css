@@ -1,0 +1,34 @@
+@media (max-width: 800px){
+	.informacion-section{
+		height: auto;
+	}
+	.informacion-section__contenedor-informacion{
+		width: 100%;
+		padding: 4em 2em;
+	}
+
+
+	.img-section{
+		height: 50vh;
+		background-attachment: local;
+	}
+}
+
+
+@media (max-width: 475px){
+	.presentacion-section{
+		height: auto;
+		padding: 4em 1em;
+	}
+	.presentacion-section__span{
+		width: 100%;
+		font-size: 1.75em;
+	}
+	.presentacion-section__h2{
+		font-size: 3.75em;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}

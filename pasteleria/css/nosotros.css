@@ -1,0 +1,89 @@
+/* Color Theme Swatches in Hex */
+.pasteleria-1-hex { color: #FF6F9D; }
+.pasteleria-2-hex { color: #B478F5; }
+.pasteleria-3-hex { color: #A4EDE5; }
+.pasteleria-4-hex { color: #F78957; }
+.pasteleria-5-hex { color: #F7D668; }
+
+/* Color Theme Swatches in RGBA */
+.pasteleria-1-rgba { color: rgba(255, 111, 157, 1); }
+.pasteleria-2-rgba { color: rgba(180, 120, 245, 1); }
+.pasteleria-3-rgba { color: rgba(164, 237, 229, 1); }
+.pasteleria-4-rgba { color: rgba(247, 137, 87, 1); }
+.pasteleria-5-rgba { color: rgba(247, 214, 104, 1); }
+
+
+:root{
+	--titulos: 'Josefin Sans', sans-serif;
+	--parrafos: 'Barlow Condensed', sans-serif;
+	--frases: 'Amatic SC', cursive;
+}
+
+
+body{
+	background-color: #F78957; 
+}
+
+
+.presentacion-section{
+	height: 350px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	padding-bottom: 2em;
+}
+.presentacion-section__span{
+	font-size: 3em;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+}
+.presentacion-section__h2{
+	font-size: 7.5em;
+	color: #fff;
+	text-transform: uppercase;
+	margin: .2em 0;
+}
+
+
+
+
+.informacion-section{
+	height: 430px;
+	width: 100%;
+	background-color: #fff;
+	color: #202020;
+}
+.informacion-section__contenedor-informacion{
+	height: 100%;
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+}
+.informacion-section__contenedor-informacion--h2{
+	margin: 0;
+}
+.informacion-section__contenedor-informacion--h3{
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+
+
+
+.img-section{
+	height: 575px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url(../img/nosotros/nosotros-img-section.jpg);
+}

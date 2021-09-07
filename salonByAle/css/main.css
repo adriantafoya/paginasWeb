@@ -1,0 +1,153 @@
+:root {
+	--titulos: 'Montserrat', sans-serif;
+	--parrafos: 'Open Sans', sans-serif;
+	--frases: 'Dancing Script', cursive;
+	font-size: 16x;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #f3f3f3;
+}
+* {
+	box-sizing: border-box;
+	font-family: var(--parrafos);
+}
+.contenedor-elementos {
+	max-width: 85%;
+	widows: 1000px;
+	margin: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--titulos);
+	font-weight: 700;
+}
+h1 { font-size: 3rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: .9rem; }
+p { font-size: 1rem; }
+.link {
+	color: #c26c67;
+	text-decoration: none;
+}
+.link:hover {
+	text-decoration: underline;
+}
+
+
+
+.header {
+	height: 50px;
+	width: 100%;
+	position: static;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: #d68885;
+}
+.contenedor-flex-header {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__link-logo {
+	padding-top: 3px;
+}
+.header__img-logo {
+	height: 35px;
+}
+.nav {
+	display: flex;
+	align-items: center;
+}
+.nav__links {
+	text-decoration: none;
+	margin-right: 25px;
+}
+.nav__links:last-child {
+	margin-right: 0;
+}
+.nav__links p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: var(--titulos);
+}
+.nav__links p:hover {
+	color: #eee;
+	transition: all .2s;
+}
+.nav__links i {
+	color: #E5A65E;
+	font-size: 22px;
+	display: none;
+	padding-right: 1px;
+}
+.nav__links i:active {
+	animation-name: link-presionado;
+	animation-duration: .24s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+.main {
+	min-height: calc(100vh - 50px);
+}
+.link-subir {
+	height: 35px;
+	width: 35px;
+	display: block;
+	position: fixed;
+	bottom: 5vh;
+	right: 3.25vw;
+	background-color: #fff;
+	box-shadow: 0 2px 12px -4px rgba(0, 0, 0, .3);
+	border-radius: 50%;
+	text-decoration: none;
+	border: 1px solid #EABE3F;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 3px;
+}
+.link-subir:hover {
+	background-color: #eee;
+	transition: all .2s;
+}
+.link-subir i {
+	color: #EABE3F;
+	font-size: 30px;
+}
+.link-subir:hover > i {
+	color: #E5A65E;
+	transition: all .2s;
+}
+
+
+.footer {
+	height: auto;
+	width: 100%;
+	padding: 1rem 0;
+	text-align: center;
+	background-color: #E5A65E;
+}
+
+
+
+/*Animaciones*/
+@keyframes link-presionado {
+	0% {
+		transform: scale(.8);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/icono.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&family=Teko&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+	<title>Descargas - Loc-OS Linux</title>
+</head>
+<body>
+	<header class="header"> 
+		<div class="header__contenedor-links">
+			<a href="https://www.youtube.com/channel/UCl8XUDjAOLc7GNKcDp9Nepg" target="_blank" class="header__contenedor-links__links"><img src="img/youtube.svg" alt="Icono de Youtube" title="Canal de youtube"></a>
+			<a href="https://www.twitch.tv/locosporlinux" target="_blank" class="header__contenedor-links__links"><img src="img/twitch.svg" alt="Icono de Twitch" title="Canal de Twitch"></a>
+			<a href="https://t.me/joinchat/WFw_r0a4mrZ4XOIg" target="_blank" class="header__contenedor-links__links"><img src="img/telegram.svg" alt="Icono de Telegram" title="Chat de Telegram"></a>
+		</div>
+		<div class="contenedor-flex-header">
+			<a href="index.html" class="header__logo">Loc-OS Linux</a>
+			<nav class="header__menu">
+				<button id="menu" class="menu__boton">
+					<i class="fi-rr-menu-burger"></i>
+				</button>
+				<ul class="menu__lista">
+					<li class="menu__celda">
+						<a href="index.html" class="menu__links">Home</a>
+					</li>
+					<li class="menu__celda">
+						<a href="descargas.html" class="menu__links">Descargar</a>
+					</li>
+					<li id="menu__celda-origen" class="menu__celda menu__celda--desplegable">
+						<p id="origen-sub-menu" class="menu__links">Amigos</p>
+						<ul class="sub-menu">
+							<li class="sub-menu__caja"><a href="https://www.youtube.com/channel/UC6ImDlcMZukA-pqtIaXqbdA" class="sub-menu__links" target="_blank">Cumpi Linux</a></li>
+							<li class="sub-menu__caja"><a href="https://www.youtube.com/channel/UCta4Iy4TzMx8Xo0pwpkbWgg" class="sub-menu__links" target="_blank">PatoJad</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section class="informacion-section">
+			<div class="contenedor-elementos contenedor-flex-informacion-section">
+				<aside class="aside">
+					<h2 class="aside__h2">Contenidos</h2>
+					<ul class="aside__lista">
+						<li><a href="#como-instalar-loc-os" class="link">Instalación</a></li>
+						<li><a href="#usuarios-por-defecto" class="link">Usuarios por defecto</a></li>
+						<li><a href="#32-bits" class="link">Descargar 32 bits</a></li>
+						<li><a href="#64-bits" class="link">Descargar 64 bits</a></li>
+					</ul>
+				</aside>
+				<div class="contenedor-informacion">
+					<article id="como-instalar-loc-os" class="informacion">
+						<h2>¿Cómo instalar Loc-OS Linux?</h2>
+						<p>
+							En este video te muestro como instalar Loc-OS de la manera correcta
+						</p>
+						<div class="informacion__contenedor-iframe">
+							<iframe width="725" height="408" src="https://www.youtube.com/embed/hcxGgtxtv_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</article>
+					<article id="usuarios-por-defecto" class="informacion">
+						<h2>Usuarios por defecto:</h2>
+						<p>
+							<b>Usuario:</b> admin <br>
+							<b>Pass:</b> admin <br>
+							<br>
+							<b>Root:</b> root <br>
+							<b>Pass:</b> root
+						</p>
+					</article>
+					<article id="32-bits" class="informacion">
+						<h2>32 bits (Beta)</h2>
+						<p>
+							La versión de 32 bits es ideal para resucitar algunos Pentium 4 y/o para cualquier PC con 1Gb de RAM. 
+							<br><br>
+							Usa Kernel 4.9 LTS
+						</p>
+						<div class="informacion__contenedor-boton">
+							<a href="https://osdn.net/projects/loc-os/downloads/74976/Loc-OS_Linux%28beta%29i386.iso" target="_blank" class="boton">Desacargar 32 bits</a>
+						</div>
+					</article>
+					<article id="64-bits" class="informacion">
+						<h2>64 bits (Beta)</h2>
+						<p>
+							La versión de 64 bits es ideal para cualquier PC que tenga 2GB o más de RAM. 
+							<br><br>
+							Además trae software adicional que su contraparte de 32 bits no trae, tal como Stremio, Steam y soporte a Flatpak.
+							<br><br>
+							Usa Kernel 5.10 LTS
+							<br><br>
+							Esta versión viene con blueman (programa para bluetooth) cargado al inicio, si no usas ningún dispositivo con bluetooth, puedes simplemente borrarlo desde la terminal con <b>"sudo apt remove blueman"</b>. De esta manera economizarás aproximadamente 100mb de ram en el inicio (la versión de 32 bits no cuenta con blueman).
+						</p>
+						<div class="informacion__contenedor-boton">
+							<a href="https://osdn.net/projects/loc-os/downloads/74976/Loc-OS_Linux%28beta%29x86_64.iso" target="_blank" class="boton">Desacargar 64 bits</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="contenedor-elementos contenedor-flex-footer">
+			<small>Sitio web diseñado por: <a href="https://github.com/adriantafoya/" target="_blank" class="link">Adrian TM</a></small>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>

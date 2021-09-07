@@ -1,0 +1,211 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in Hex */
+.pasteleria-1-hex { color: #FF6F9D; }
+.pasteleria-2-hex { color: #B478F5; }
+.pasteleria-3-hex { color: #A4EDE5; }
+.pasteleria-4-hex { color: #F78957; }
+.pasteleria-5-hex { color: #F7D668; }
+
+/* Color Theme Swatches in RGBA */
+.pasteleria-1-rgba { color: rgba(255, 111, 157, 1); }
+.pasteleria-2-rgba { color: rgba(180, 120, 245, 1); }
+.pasteleria-3-rgba { color: rgba(164, 237, 229, 1); }
+.pasteleria-4-rgba { color: rgba(247, 137, 87, 1); }
+.pasteleria-5-rgba { color: rgba(247, 214, 104, 1); }
+
+
+body{
+	background-color: #A4EDE5; 
+}
+
+
+.principal-section{
+	height: 575px;
+	width: 100%;
+	padding: 1.5em 0;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.principal-section__capa-img{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
+	overflow: hidden;
+}
+.principal-section__capa-img img{
+	height: 450px;
+}
+.principal-section__capa-informacion{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	padding-bottom: 6em;
+}
+.principal-section__capa-informacion--span{
+	font-size: 3em;
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+}
+.principal-section__capa-informacion--h2{
+	font-size: 6em;
+	color: #fff;
+}
+.principal-section__capa-informacion--link-button{
+	padding: 10px 30px;
+	outline: 2.5px solid #fff;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: var(--titulos);
+	text-transform: uppercase;
+}
+.principal-section__capa-informacion--link-button:hover{
+	background-color: #303030;
+	outline: none;
+	transition: all .35s;
+}
+
+
+
+.imagen-section{
+	height: 575px;
+	width: 100%;
+	padding: 1.5em 0;
+}
+.imagen-section__capa-informacion{
+	height: 100%;
+	width: 75%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	padding-bottom: 6em;
+	margin: auto;
+}
+.imagen-section__capa-informacion--span{
+	font-size: 3em;
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+}
+.imagen-section__capa-informacion--h2{
+	font-size: 6em;
+	color: #fff;
+	text-transform: uppercase;
+}
+.imagen-section__capa-informacion--link-button{
+	padding: 10px 30px;
+	outline: 2.5px solid #fff;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: var(--titulos);
+	text-transform: uppercase;
+}
+.imagen-section__capa-informacion--link-button:hover{
+	background-color: #303030;
+	outline: none;
+	transition: all .35s;
+}
+
+
+
+
+.informacion-section{
+	height: 575px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: #fff;
+}
+.informacion-section-reverse{
+	flex-direction: row-reverse;
+}
+.informacion-section__capa-img{
+	height: 100%;
+	width: 50%;
+}
+.informacion-section__capa-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: right;
+}
+.informacion-section__contenedor-informacion{
+	height: 100%;
+	width: 50%;
+	padding: 1.5em 3em;
+	display: flex;
+	justify-content: flex-start; 
+}
+.informacion-section__contenedor-informacion-reverse{
+	justify-content: flex-end;
+}
+.contenedor-informacion__informacion-section{
+	height: 100%;
+	width: 350px;
+	padding: 3em;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: #202020;
+}
+.informacion-section__capa-informacion--h2{
+	text-transform: uppercase;
+	margin: 0;
+}
+.informacion-section__capa-informacion--h3{
+	margin-top: 0;
+}
+.informacion-section__capa-informacion--p{
+	margin-bottom: 3.5em;
+}
+.informacion-section__capa-informacion--button{
+	padding: 10px 30px;
+	outline: 2.5px solid #000;
+	text-decoration: none;
+	color: #000;
+	font-size: 25px;
+	font-family: var(--titulos);
+	text-transform: uppercase;
+}
+.informacion-section__capa-informacion--button:hover{
+	background-color: #303030;
+	outline: none;
+	transition: all .35s;
+	color: #fff;
+}
+
+
+
+
+.img-section{
+	height: 550px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url(../img/inicio/pastel-img-section.jpg);
+}

@@ -1,0 +1,105 @@
+.servicio-section {
+	height: auto;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.servicio-section__contenedor-filtro {
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	padding: 1px 0 3rem 0;
+	background-color: rgba(0, 0, 0, .1);
+}
+.servicio-section--unas {
+	background-image: url(../img/unas-acrilicas.jpg);
+}
+.servicio-section--pedicure {
+	background-image: url(../img/pedicure.jpg);
+}
+.servicio-section--tintes {
+	background-image: url(../img/tintes-b.jpg);
+}
+.servicio-section--maquillaje {
+	background-image: url(../img/maquillaje.jpg);
+}
+.contenedor-flex-servicio-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.servicio-section h2 {
+	color: #fff;
+	text-align: center;
+}
+.servicio-section__contenedor-cards {
+	margin: auto;
+	height: auto;
+	width: auto;
+	padding: 10px 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scrollbar-width: none;
+}
+.servicio-section__contenedor-cards::-webkit-scrollbar {
+	display: none;
+}
+.card-servicio {
+	height: 300px;
+	width: 200px;
+	padding: 10px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-right: 2rem;
+}
+.card-servicio:last-child {
+	margin-right: 0;
+}
+.card-servicio__contenedor-img {
+	height: 250px;
+	width: 100%;
+}
+.card-servicio__img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+.card-servicio__titulo {
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.servicio-section__link-agendar-cita {
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 25px;
+	background-color: #4CAF50;
+	margin-top: 2rem;
+	text-decoration: none;
+	color: #fff;
+	font-family: var(--titulos);
+	font-weight: 700;
+}
+.servicio-section__link-agendar-cita:active {
+	transform: scale(1.03);
+}
+.servicio-section__icono-link-agendar-cita {
+	height: 22px;
+	width: auto;
+	margin-right: 5px;
+	margin-bottom: -4px;
+}

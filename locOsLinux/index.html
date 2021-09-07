@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/icono.png" type="image/png">
+	<title>Loc-OS Linux</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&family=Teko&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+	<header class="header"> 
+		<div class="header__contenedor-links">
+			<a href="https://www.youtube.com/channel/UCl8XUDjAOLc7GNKcDp9Nepg" target="_blank" class="header__contenedor-links__links"><img src="img/youtube.svg" alt="Icono de Youtube" title="Canal de youtube"></a>
+			<a href="https://www.twitch.tv/locosporlinux" target="_blank" class="header__contenedor-links__links"><img src="img/twitch.svg" alt="Icono de Twitch" title="Canal de Twitch"></a>
+			<a href="https://t.me/joinchat/WFw_r0a4mrZ4XOIg" target="_blank" class="header__contenedor-links__links"><img src="img/telegram.svg" alt="Icono de Telegram" title="Chat de Telegram"></a>
+		</div>
+		<div class="contenedor-flex-header">
+			<a href="index.html" class="header__logo">Loc-OS Linux</a>
+			<nav class="header__menu">
+				<button id="menu" class="menu__boton">
+					<i class="fi-rr-menu-burger"></i>
+				</button>
+				<ul class="menu__lista">
+					<li class="menu__celda">
+						<a href="index.html" class="menu__links">Home</a>
+					</li>
+					<li class="menu__celda">
+						<a href="descargas.html" class="menu__links">Descargar</a>
+					</li>
+					<li id="menu__celda-origen" class="menu__celda menu__celda--desplegable">
+						<p id="origen-sub-menu" class="menu__links">Amigos</p>
+						<ul class="sub-menu">
+							<li class="sub-menu__caja"><a href="https://www.youtube.com/channel/UC6ImDlcMZukA-pqtIaXqbdA" class="sub-menu__links" target="_blank">Cumpi Linux</a></li>
+							<li class="sub-menu__caja"><a href="https://www.youtube.com/channel/UCta4Iy4TzMx8Xo0pwpkbWgg" class="sub-menu__links" target="_blank">PatoJad</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section class="presentacion-section">
+			<div class="contenedor-elementos contenedor-flex-presentacion-section">
+				<h1 class="presentacion-section__h1">Loc-OS Linux</h1>
+				<h2 class="presentacion-section__frase">La salvación de los equipos antiguos</h2>
+				<div class="presentacion-section__contenedor-iframe">
+					<iframe class="presentacion-section__iframe" width="725" height="408" src="https://www.youtube.com/embed/XhVB-PDnz2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="informacion-section">
+			<div class="contenedor-elementos contenedor-flex-informacion-section">
+				<aside class="aside">
+					<h2 class="aside__h2">Contenidos</h2>
+					<ul class="aside__lista">
+						<li><a href="#que-es-loc-os" class="link">¿Qué es Loc-OS?</a></li>
+						<li><a href="#loc-os-o-antix" class="link">¿Loc-OS o Antix?</a></li>
+						<li><a href="#caracteristicas" class="link">Características</a></li>
+						<li><a href="#software-adicional" class="link">Software adicional</a></li>
+					</ul>
+				</aside>
+				<div class="contenedor-informacion">
+					<article id="que-es-loc-os" class="informacion ">
+						<h2>¿Qué es Loc-OS Linux?</h2>
+						<p>
+							<strong>Loc-OS Linux</strong> es una distribución de Gnu/Linux creada por un Urugayo que vive en Brasil, <b>Nicolas Longardi</b>. Esta distribución tiene el propósito de ser una distro ligera y completa al mismo tiempo, pudiendo así resucitar equipos muy viejos. Existe una versión de 32 bits, especial para equipos con 1GB de RAM y también hay otra versión de 64 bis, especial para maquinas con 2GB de RAM o más. Mucha gente aún conserva algún PC de muy bajos recursos y con <strong>Loc-Os Linux</strong> podrás darle otra oportunidad antes de que se convierta en basura electrónica. Loc-OS no es una distro "Linux from scratch", sino que es una modificación (re-spin) de Antix 19.3. <a href="https://antixlinux.com" target="_blank" class="link">Antix</a> está basado en Debian, con lo cual Loc-OS en el fondo es un Debian 10 Buster completo y funcional pero sin systemd.
+						</p>
+					</article>
+					<article id="loc-os-o-antix" class="informacion">
+						<h2>¿Debo usar Loc-OS o Antix?</h2>
+						<p>
+							Antix está muy bien, pero Loc-OS Linux se podría decir que es una versión mejorada, ya que Antix no posee ningún escritorio, solamente 3 gestores de ventanas (que Loc-OS no los tiene), los cuales son ICEwm (como principal), JWM y Fluxbox. Loc-OS en cambio trae (únicamente) LXDE, el cual es un escritorio completo y ligero. Muy fácil de usar. Ademas no hay programas innecesarios. En esta distro solo encontrarás el software básico para cualquier PC (programas de oficina, calculadora, editor de textos, reproductor de video y audio, navegador web y en la versión de 64 bits, también trae Wine, Steam y Stremio, etc). Además si probaste Antix y tuviste problemas al conectarte a internet vía Wi-Fi, en esta distro es probable que no tengas ese problema, ya que cuenta con drivers adicionales de red.
+						</p>
+					</article>
+					<article id="caracteristicas" class="informacion">
+						<h2>Características</h2>
+						<p>
+							Loc-OS Linux de 32 bits, usa el kernel 4.9 LTS que va muy bien en hardware antiguo y promete iniciar el sistema completo consumiendo aproximadamente 185Mb de RAM. En cambio la versión de 64 bits usa el kernel linux 5.10, que es el kernel LTS más reciente hasta la fecha.
+							<br>
+							Incluye una simple pero potente tienda de software, también el gestor de paquetes synaptic y Gdebi para poder instalar paquetes .deb de forma sencilla. Únicamente en la versión de 64 bits incluye soporte a flatpack junto a una bonita tienda de software.
+							<br>
+							También incluye fuentes extras y wallpapers originales creados especialmente para esta distribución con fotos de lugares de Uruguay y Brasil.
+						</p>
+						<img src="img/locos32bits.png" alt="Vista previa de Loc-OS Linux 32 bits">
+						<p>Hay que destacar que Loc-OS es libre de systemd, en su lugar usa SysVinit.</p>
+					</article>
+					<article id="software-adicional" class="informacion">
+						<h2>Software adicional</h2>
+						<p>
+							Fueron adicionados programas muy útiles como ROFI, un lanzador (launcher) de programas que ya está pre configurado para ser lanzado con WIN+ESPACIO. También fue adicionado el YTFZF, que sirve para ver videos de youtube a travéz de nuestra terminal. Para usarlo, solo precisamos abir la terminal (con WIN+T) y escribir <b>ytfzf</b>, enter y luego escribimos el título que queremos buscar. Aparecerá una lista con videos prontos para ser reproducidos, el video se reproducirá en el reproductor MPV que se abrirá automáticamente. Esto es perfecto para aquellos PC's que tienen problemas hasta para reproducir vídeos de YouTube desde un navegador.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="contenedor-elementos contenedor-flex-footer">
+			<small>Sitio web diseñado por: <a href="https://github.com/adriantafoya/" target="_blank" class="link">Adrian TM</a></small>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>

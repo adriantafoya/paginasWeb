@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^salonbyale.github.io?$ index.html
+RewriteRule ^servicios?$ servicios.html
+RewriteRule ^galeria?$ galeria.html

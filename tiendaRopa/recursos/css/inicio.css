@@ -1,0 +1,213 @@
+:root{
+	--titulos: 'Comfortaa', cursive;
+	--parrafos: 'Questrial', sans-serif;
+}
+
+
+.principal-section{
+	background-image: url(../../recursos/img/inicio/principal-section.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+}
+.capa-color-principal-section{
+	background-color: rgba(0,0,0,.3);
+	height: 100%;
+	width: 100%;
+	padding: 3em 0 5em 0;
+}
+.contenedor-logo{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 2em 0;
+}
+.contenedor-logo img{
+	width: 20em;
+	margin: auto;
+}
+.contenedor-texto{
+	width: 75%;
+	margin: auto;
+	padding: 2em 0;
+}
+.contenedor-texto h1{
+	color: #fff;
+	font-family: var(--parrafos);
+	font-weight: 300;
+	text-align: center;
+}
+
+
+
+.cta-section{
+	height: auto;
+	width: 100%;
+	padding: 2em 0;
+}
+.cta-section .contenedor-elementos h2{
+	text-align: center;
+	margin-bottom: .5em;
+}
+.contenedor-flex-cta{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+}
+.tarjeta-cta{
+	width: 12.5em;
+	height: 12.5em;
+	position: relative;
+	margin-right: 1em;
+	box-shadow: 0px 3px 10px rgba(87,87,87,.5);
+	border-radius: 50%;
+}
+.tarjeta-cta:hover{
+	animation-name: cta;
+	animation-duration: .75s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+@keyframes cta{
+	50%{
+		transform: scale(.95);
+		opacity: .95;
+	}
+}
+.tarjeta-cta:last-child{
+	margin-right: 0;
+}
+.tarjeta-cta a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+.contenedor-img-cta{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.contenedor-img-cta img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: saturate(150%);
+	border-radius: 50%;
+}
+.contenedor-nombre-cta{
+	width: 100%;
+	height: 100%;
+	background-color: #0008;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.contenedor-nombre-cta h3{
+	color: #fff;
+}
+
+
+
+.carrusel-section{
+	height: auto;
+	width: 100%;
+	padding: 2em 0;
+}
+.contenedor-informacion-productos h2{
+	text-align: center;
+}
+.contenedor-informacion-productos p{
+	text-align: center;
+}
+.carrusel-productos{
+	height: auto;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding: .75em .75em 1.25em .75em; 
+}
+.carrusel-productos::-webkit-scrollbar{
+	background-color: transparent;
+	height: 8.5px;
+}
+.carrusel-productos::-webkit-scrollbar-button{
+	display: none;
+}
+.carrusel-productos::-webkit-scrollbar-thumb{
+	background-color: #0005;
+	border-radius: 6px;
+}
+.carrusel-productos::-webkit-scrollbar-thumb:hover{
+	background-color: #0007;
+}
+.tarjeta-producto{
+	height: auto;
+	width: auto;
+	background-color: #fff;
+	display: inline-block;
+	margin-right: 1em;
+	box-shadow: 0px 3px 10px rgba(87,87,87,.5);
+	border: 7.5px solid #fff;
+}
+.tarjeta-producto:hover{
+	animation-name: tarjeta-hover;
+	animation-duration: .6s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+@keyframes tarjeta-hover{
+	50%{
+		transform: scale(1.1);
+	}
+}
+.tarjeta-producto:last-child{
+	margin-right: 0;
+}
+.tarjeta-producto a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+.contenedor-img{
+	height: 15em;
+	width: 12em;
+}
+.contenedor-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.contenedor-informacion{
+	height: auto;
+	width: 100%;
+	padding: 15px 0 7.5px 0;
+	display: flex;
+	justify-content: center;
+}
+.contenedor-informacion h4{
+	color: #0ac200;
+}
+
+
+
+.informacion-tienda-section{
+	padding: 2em;
+	height: auto;
+	width: 100%;
+	background-color: #e1e1e1;
+}

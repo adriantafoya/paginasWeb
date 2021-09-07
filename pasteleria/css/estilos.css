@@ -1,0 +1,237 @@
+/* Color Theme Swatches in Hex */
+.pasteleria-1-hex { color: #FF6F9D; }
+.pasteleria-2-hex { color: #B478F5; }
+.pasteleria-3-hex { color: #A4EDE5; }
+.pasteleria-4-hex { color: #F78957; }
+.pasteleria-5-hex { color: #F7D668; }
+
+/* Color Theme Swatches in RGBA */
+.pasteleria-1-rgba { color: rgba(255, 111, 157, 1); }
+.pasteleria-2-rgba { color: rgba(180, 120, 245, 1); }
+.pasteleria-3-rgba { color: rgba(164, 237, 229, 1); }
+.pasteleria-4-rgba { color: rgba(247, 137, 87, 1); }
+.pasteleria-5-rgba { color: rgba(247, 214, 104, 1); }
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+:root{
+	--titulos: 'Josefin Sans', sans-serif;
+	--parrafos: 'Barlow Condensed', sans-serif;
+	--frases: 'Amatic SC', cursive;
+}
+
+*{
+	font-family: var(--parrafos);
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	font-family: var(--titulos);
+	margin: .5em 0;
+	text-transform: uppercase;
+}
+h1 {font-size: 3em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2em;}
+h4 {font-size: 1.6em;}
+h5 {font-size: 1.4em;}
+h6 {font-size: 1.2em;}
+p {font-size: 1.1em;}
+.contenedor-elementos{
+	height: 100%;
+	width: 85%;
+	margin: auto;
+}
+.frase{
+	font-family: var(--frases);
+	font-style: oblique;
+}
+
+
+
+.header__header-horario{
+	height: auto;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	padding: .75em 0;
+	text-align: center;
+}
+.header__header-horario p{
+	margin: 0;
+	text-align: center;
+}
+.header{
+	height: auto;
+	width: 100%;
+	background-color: transparent;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	text-transform: uppercase;
+	padding: .5em 0;
+}
+.header__contenedor-flex{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__span-logo{
+	font-size: 2em;
+}
+.header__span-logo a{
+	color: #000;
+	text-decoration: none;
+	font-family: var(--frases);
+}
+.header__nav{
+	height: 100%;
+	width: auto;
+	display: flex;
+	align-items: center;
+}
+.nav__menu{
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.nav__button-menu{
+	display: none;
+}
+.nav__button-menu:focus{
+	outline: none;
+}
+.menu__li{
+	margin-right: 1em;
+}
+.menu__li:last-child{
+	margin-right: 0;
+}
+.menu__li--a{
+	display: inline-block;
+	padding: 6.5px 10px;
+	font-family: var(--titulos);
+	text-decoration: none;
+	color: #000;
+	font-size: 17px;
+}
+.menu__li--a:hover{
+	color: #595959;
+	transition: all .25s;
+}
+
+
+
+
+/*
+----------------------BOTON VOLVER/SUBIR------------------
+*/
+.button-volver{
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2px solid #000;
+	z-index: 100;
+	background-color: #fff;
+}
+.button-volver:hover{
+	background-color: #c6c6c6;
+	border: none;
+	transition: all .25s;
+}
+.button-volver__a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #000;
+	font-size: 24px;
+}
+
+
+
+
+
+
+.footer{
+	height: auto;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	padding: .25em 0;
+	border-top: 2px solid #fff;
+}
+.footer__footer-main{
+	height: 100%;
+	width: 90%;
+	margin: 3em auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.footer-main__article{
+	height: auto;
+	width: 25%;
+	padding: 0 1em;
+}
+.footer-main__article a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer-main__article a:hover{
+	text-decoration: underline;
+}
+.footer-main__article--lista{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.footer-main__article--redes{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+.footer-main__article--redes li{
+	margin-right: .5em;
+}
+.footer-main__article--redes li:last-child{
+	margin-right: 0;
+}
+.footer-main__article--redes li a img{
+	height: 27.5px;
+}
+.footer__copyright{
+	width: 90%;
+	margin: auto;
+	margin-top: 1em;
+	padding: 0 1em;
+}
+.footer__copyright a{
+	color: #fff;
+}
+.footer__copyright a:hover{
+	text-decoration: underline;
+}

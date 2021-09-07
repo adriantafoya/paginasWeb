@@ -1,0 +1,129 @@
+/* Color Theme Swatches in Hex */
+.pasteleria-1-hex { color: #FF6F9D; }
+.pasteleria-2-hex { color: #B478F5; }
+.pasteleria-3-hex { color: #A4EDE5; }
+.pasteleria-4-hex { color: #F78957; }
+.pasteleria-5-hex { color: #F7D668; }
+
+/* Color Theme Swatches in RGBA */
+.pasteleria-1-rgba { color: rgba(255, 111, 157, 1); }
+.pasteleria-2-rgba { color: rgba(180, 120, 245, 1); }
+.pasteleria-3-rgba { color: rgba(164, 237, 229, 1); }
+.pasteleria-4-rgba { color: rgba(247, 137, 87, 1); }
+.pasteleria-5-rgba { color: rgba(247, 214, 104, 1); }
+
+
+:root{
+	--titulos: 'Josefin Sans', sans-serif;
+	--parrafos: 'Barlow Condensed', sans-serif;
+	--frases: 'Amatic SC', cursive;
+}
+
+
+body{
+	background-color: #FF6F9D; 
+}
+
+
+.presentacion-section{
+	height: 350px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	padding-bottom: 2em;
+}
+.presentacion-section__span{
+	font-size: 3em;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+}
+.presentacion-section__h2{
+	font-size: 6em;
+	color: #fff;
+	text-transform: uppercase;
+	margin: .2em 0;
+}
+
+
+
+
+.catalogo-section{
+	height: auto;
+	width: 100%;
+	background-color: #fff;
+	padding: 1em;
+}
+.catalogo-section__apartados{
+	max-width: 100%;
+	height: auto;
+	width: 800px;
+	margin: auto;
+}
+.catalogo-section__apartados--contenedor-titulo{
+	height: auto;
+	width: 75%;
+	padding: .25em;
+	margin: auto;
+}
+.apartados__contenedor-titulo--h3{
+	text-align: center;
+	color: #383838;
+}
+.apartados__contenedor-titulo--hr{
+	border: none;
+	max-width: 100%;
+	width: 20%;
+	height: 2px;
+	background-color: #383838;
+}
+.catalogo-section__apartados--contenedor-productos{
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.apartados__contenedor-productos--card-producto{
+	height: auto;
+	width: 30%;
+	padding: .5em 1.5em;
+	margin: 1.25em 0;
+	margin-bottom: 5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card-producto__img{
+	height: auto;
+	width: 75%;
+}
+.card-producto__h4{
+	text-align: center;
+	font-family: var(--parrafos);
+	color: #383838;
+	margin: .75em 0;
+}
+.card-producto__hr{
+	border: none;
+	max-width: 100%;
+	width: 75%;
+	height: 2px;
+	background-color: #383838;
+}
+.card-producto__p{
+	text-align: center;
+	font-family: var(--parrafos);
+	color: #383838;
+}
+.card-producto__h4--precio{
+	text-align: center;
+	font-family: var(--parrafos);
+	color: #383838;
+	margin: .5em 0;
+}

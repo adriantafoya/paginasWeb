@@ -1,0 +1,86 @@
+@media (max-width: 768px){
+	:root{
+		--titulos: 'Comfortaa', cursive;
+		--parrafos: 'Questrial', sans-serif;
+	}
+	*{
+		font-family: var(--parrafos);
+		box-sizing: border-box;
+	}
+	h2,h3,h4,h5,h6{
+		font-family: var(--titulos);
+		margin: 0;
+	}
+
+	.contenedor-elementos{
+		width: 90%;
+	}
+
+	nav{
+		height: 35px;
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
+	.menu-principal{
+		padding: 0;
+		list-style: none;
+		width: 100%;
+		height: auto; 
+		display: block;
+		margin: 0;
+		white-space: nowrap;
+	}
+	.menu-principal li{
+		display: inline-block;
+	}
+	.menu-principal li:hover{
+		background-color: #e8e8e8;
+	}
+
+}
+
+@media (max-width: 650px){
+	.datos-article{
+		width: 50%;
+		padding: .25em;
+		border-right: none;
+	}
+	.datos-article:first-child{
+		width: 100%;
+	}
+	.datos-article h5{
+		text-align: left;
+	}
+	.datos-article ul li{
+		margin-bottom: .5em;
+		display: flex;
+		justify-content: flex-start;
+	}
+	.links-datos-footer img{
+		margin-right: .25em;
+		height: 15px;
+	}
+}
+
+@media (max-width: 480px){
+	h1{ font-size: 27.5px; }
+	h2{ font-size: 23.5px; }
+	h3{ font-size: 19px; }
+	h4{ font-size: 17px; }
+	h5{ font-size: 14px; }
+	p{ font-size: 15px; margin: .35em 0em .75em 0em;}
+	small{ font-size: 13px; }
+
+
+	header{
+		height: auto;
+		padding: .35em 0;
+	}
+	.contenedor-flex-header img{
+		width: 35vw;
+		height: auto;
+	}
+	.links-redes-sociales-header img{
+		width: 9vw;
+	}
+}
